@@ -1,0 +1,440 @@
+$light-grey: #9fa3a7
+$yell: #ffc80a
+$purp: #8f75be
+
+%start_dance-h-base
+	font-family: 'ArvoRegular'
+	font-size: 44px
+
+%grey-opensans-base
+	font-family: 'OpenSans'
+	color: $light-grey
+
+.button
+	font-family: 'LatoBold'
+	font-size: 14px
+	text-transform: uppercase
+	border: 3px solid $yell
+	border-radius: 28px
+	padding: 18px 50px
+	color: #000
+
+.navbar
+	background-color: rgba(0,0,0,.6);
+	z-index: 1000
+
+	.navbar-header
+			
+		button
+			padding: 6px 0 0 0
+
+			span
+				background-color: #fff
+				height: 4px
+				width: 30px
+
+		.navbar-brand
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+
+			span
+				font-family: 'LatoBold'
+				font-size: 28px
+				color: #fff
+				text-transform: uppercase
+				margin-left: 15px
+				padding-top: 2px
+
+	.navbar-collapse
+		float: right
+		margin-top: 15px
+
+		div:nth-child(5)
+			margin-left: 130px
+
+
+		div
+			display: inline-block
+			font-family: 'LatoBold'
+			font-size: 16px
+			margin-right: 40px
+			text-align: center
+			
+			a
+				color: #fff
+				margin: 0 auto
+
+			.active
+				text-decoration: none
+				color: $yell
+
+			a:hover, a:focus
+				text-decoration: none
+				color: $yell
+
+			.button
+				padding: 10px
+				
+.main_screen
+	background-color: #2c2c2c
+	padding: 200px 0
+
+			
+	.big_logo
+		max-width: 450px
+		margin: 0 auto 
+
+	.slog
+		font-family: "OpenSansBold"
+		font-size: 89px
+		margin: 0 auto
+		max-width: 760px
+		max-height: 90px
+		text-align: center
+		color: #fff
+
+	.slog_2
+		font-size: 65px
+		max-height: 70px
+
+	.quote
+		margin: 40px auto 0
+		max-width: 700px
+
+		.inside_quote
+			width: 570px
+			position: absolute
+			margin:
+				left: 100px
+				top: -63px
+
+			div
+				display: inline-block
+				font-family: 'ArvoRegular'
+				font-size: 22px
+				width: 525px
+
+			img
+				margin:
+					bottom: 36px
+					right: 12px
+
+		.writer
+			width: 400px
+			margin:
+				left: 100px
+				top: 5px
+
+			span
+				font-family: 'LatoRegular'
+				color: #fff
+	
+			.name
+				font-size: 20px
+
+			.who
+				font-size: 18px
+
+.dances
+	height: 1000px
+	background-color: #000
+	padding:
+		top: 30px
+
+	.main_buttonset
+		width: 576px
+		margin: 0 auto
+
+		.button	
+			font-size: 12px
+			letter-spacing: 1px
+
+		.button:hover, .button:focus
+			text-decoration: none
+
+		.la
+			padding: 7px 10px 4px
+			border-radius: 20px 0 0 20px
+			margin-right: -3px
+			color: #000
+			background-color: $yell 
+
+		.st
+			padding: 7px 49px 4px 50px
+			border-radius: 0 20px 20px 0 
+			margin-left: -3px
+			color: #fff
+			background-color: rgba(0, 0, 0, 0)
+
+	.la_buttonset, .st_buttonset
+		
+		.button	
+			font-size: 12px
+			letter-spacing: 1px
+			padding: 7px 10px 4px
+			background-color: rgba(0, 0, 0, 0)
+			color: #fff
+
+	.la_buttonset
+		width: 447px
+		margin: 
+			top: 15px 
+			left: -223.5px
+		left: 50%
+		position: absolute
+
+
+		.button
+			margin: 3px 
+
+		.sa
+			margin: 0
+
+		.ch, .ru, .pd, .jv
+			border: none
+
+		.ch:hover, .ru:hover, .pd:hover, .jv:hover
+			border: 3px solid $yell
+			margin: 0
+
+		.ch:focus, .ru:focus, .pd:focus, .jv:focus
+			border: 3px solid $yell
+			margin: 0
+
+	.st_buttonset
+		width: 690px
+		margin: 
+			top: 15px 
+			left: -345px
+		left: 50%
+		position: absolute
+		display: none
+		
+
+		.button
+			margin: 3px
+			border: none
+
+		.button:hover
+			border: 3px solid $yell
+			margin: 0
+
+
+
+
+
+.start_dance
+	text-align: center
+		
+	h1 
+		@extend %start_dance-h-base
+		margin:
+			top: 80px
+			bottom: 35px
+
+	.description
+		@extend %grey-opensans-base
+		font-size: 17px
+		margin:
+			top: 0
+			bottom: 75px
+
+	.entry
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		max-width: 490px * 2
+		margin: 0 auto 45px
+
+		.adults, .child
+			height: 590px
+			width: 490px
+			padding: 95px 0
+			display: flex
+			flex-direction: column
+			align-items: center
+
+		.adults
+			border: 1px solid $light-grey
+			border-radius: 5px 0 0 5px
+
+			.button
+				background-color: #fff
+
+		.child
+			border-radius: 0 5px 5px 0
+			background-color: $purp
+
+			h3
+				color: $yell
+
+			.button
+				color: #fff
+				background-color: $purp
+
+		h3
+			font-family: 'MyriadProRegular'
+			font-size: 14px
+			letter-spacing: 2px
+			text-transform: uppercase
+			color: $light-grey
+			margin:
+				top: 0
+				bottom: 42px
+
+		h2
+			@extend %start_dance-h-base
+			margin:
+				top: 0
+				bottom: 62px
+
+		.training_programm
+			@extend %grey-opensans-base
+			font-size: 14px
+			max-width: 267px
+			margin: 0 auto 80px
+
+	.contacts
+		display: none
+		padding: 40px 0
+		h3, h4
+			font-family: 'LatoBold'
+			font-size: 14px
+			letter-spacing: 2px
+			text-transform: uppercase
+			color: $light-grey
+
+		.call_me
+			max-width: 800px
+			margin: 0 auto
+
+			input
+				width: 320px
+				height: 43px
+				background-color: #fafafa
+				border: 1px solid $light-grey
+				border-radius: 5px
+				margin: 15px 15px
+				padding-left: 10px
+
+		h4
+			color: #626467
+			font-size: 12px
+
+		.back
+			width: 232px
+			height: 44px
+			border: 2px solid $light-grey
+			border-radius: 20px
+			background-color: #FFF
+			float: left
+			margin:
+				left: 178px
+				top: 200px
+			font-family: 'LatoBold'
+			font-size: 14px
+			letter-spacing: 2px
+			text-transform: uppercase
+		.done
+			width: 160px
+			height: 44px
+			background-color: $purp
+			border-radius: 20px
+			border: none
+			float: right
+			margin:
+				right: 190px
+				top: 200px
+			font-family: 'LatoBold'
+			font-size: 14px
+			letter-spacing: 2px
+			text-transform: uppercase
+
+	.confirm
+		padding: 50px 0
+		margin-bottom: 50px
+		display: none		
+
+		span
+			display: block
+			font-size: 60px
+
+	.line
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		max-width: 500px
+		height: 30px
+		margin: 80px auto 0
+
+		img
+			height: 30px
+
+		.yellow_line
+			color: $yell
+			background-color: $yell
+			border: none
+			height: 2px
+			width: 205px
+
+		.ints
+			border: 1px solid $yell
+			border-radius: 28px
+			background-color: $yell
+			font-size: 20px
+			padding: 0 9px
+			color: #fff
+
+		.int_1
+			border: 1px solid $purp
+			background-color: $purp
+			
+		.ticks
+			border: 1px solid $purp
+			border-radius: 28px
+			background-color: $purp
+			font-size: 20px
+			padding: 0 7px
+			color: #fff	
+			display: none
+	.steps
+		width: 600px
+		margin: 5px auto 50px
+
+		span
+			font-family: 'LatoBold'
+			font-size: 10px
+			text-transform: uppercase
+			letter-spacing: 2px
+
+		span:nth-child(1)
+			margin-left: 18px
+			float: left
+
+		span:nth-child(2)
+			margin-left: 125px
+			float: left
+
+		span:nth-child(3)
+			margin-right: 35px
+			float: right
+
+.footer
+	background-color: #2c2c2c
+	
+	.logos
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+		align-items: center
+		margin: 35px 0
+
+	hr
+		color: #424242
+		background-color: #424242	
+		border: none
+		height: 2px
