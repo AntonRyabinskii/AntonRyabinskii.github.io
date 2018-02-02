@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ТК Кристалл</title>
+	<meta name="description" content="Клуб бального танца Кристалл">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1"> 
+	<link rel="shortcut icon" href="img/shortcut.png">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+             <img src="img/logo.png" alt="" class="logo">
+             <span>кристалл</span>
+            </a>
+        </div>
+        <div class="navbar-collapse collapse">                
+            <div><a class="active" href="#">Главная</a></div>
+            <div><a href="#">О клубе</a></div>
+            <div><a href="#">Клубные карты</a></div>
+            <div><a href="contacts.html">Контакты</a></div>
+            <div><a href="#" class="button">Пробный урок</a></div>                     
+        </div>
+    </div>
+    <section class="main_screen">
+    	<div class="big_logo">
+    		<img src="img/big_logo.png" alt="">
+    	</div>
+    	<h1 class="slog slog_1">Бальные танцы</h1>
+    	<h2 class="slog slog_2">для детей и взрослых</h2>
+    	<div class="quote">
+    		<img src="img/writer.png" alt="">
+    		<img class="for_quote" src="img/for_quote.png" alt="">
+    		<div class="inside_quote">
+    			<img src="img/points.png" alt="">
+    			<div>Танец – единственный вид искусства, в котором мы сами являемся инструментом.</div>
+    		</div>
+    		<div class="writer">
+    			<span class="name">Рахель Фарнхаген,</span>
+    			<span class="who">немецкая писательница</span>
+    		</div>
+    	</div>
+    </section>
+    <section class="sa" id="dances">
+    	<div class="main_buttonset">
+    		<button class="button active" id="la">латиноамериканская программа</button>
+    		<button class="button" id="st">европейская программа</button>
+    	</div>
+    	<div class="buttonset visual" id="la_buttonset">
+    		<button class="button active" id="sa">самба</button>
+    		<button class="button" id="ch">ча-ча-ча</button>
+    		<button class="button" id="ru">румба</button>
+    		<button class="button" id="pd">пасодобль</button>
+    		<button class="button" id="jv">джайв</button>
+    	</div>
+    	<div class="buttonset" id="st_buttonset">
+    		<button class="button active" id="sw">медленный вальс</button>
+    		<button class="button" id="tg">танго</button>
+    		<button class="button" id="vw">венский вальс</button>
+    		<button class="button" id="sf">медленный фокстрот</button>
+    		<button class="button" id="qs">квикстеп</button>
+    	</div>
+    </section>
+	<section class="start_dance">
+		<div class="container">
+			<h1>Начни танцевать</h1>
+			<div class="description">Описание</div>
+			<div class="line">
+				<span class="ints visual active_int" id="int_1">1</span>
+				<span class="ticks" id="tick_1">✔</span>
+				<hr class="yellow_line" id="line_1">
+				<span class="ints visual" id="int_2">2</span>
+				<span class="ticks" id="tick_2">✔</span>
+				<hr class="yellow_line" id="line_2">
+				<span class="ints visual" id="int_3">3</span>
+				<span class="ticks" id="tick_3">✔</span>
+			</div>
+			<div class="steps">
+				<span>направление</span>
+				<span>ваши контакты</span>
+				<span>готово</span>
+			</div>
+			<div class="entry active_entry" id="entry">
+				<div class="start_entry" id="adults">
+					<h3>записаться в группу</h3>
+					<h2>для взрослых</h2>
+					<div class="training_programm">
+						Групповые занятия 2 раза в неделю, на которых Вы будете учиться Европейской и Латиноамериканской программе бального танца.
+					</div>
+					<button class="button fancybox" id="button_adults">Начать</a>
+				</div>
+				<div class="start_entry" id="child">
+					<h3>зписаться в группу</h3>
+					<h2>для детей</h2>
+					<div class="training_programm">
+						Групповые занятия 3 раза в неделю, на которых Ваш ребенок будет обучаться Европейской и Латиноамериканской программе бального танца.
+					</div>
+					<button class="button fancybox" id="button_child">Начать</a>
+				</div>
+			</div>
+			<div class="contacts" id="contacts">
+				<div class="container">
+					<h3>контактная информация</h3>
+					<form id="callback" class="call_me">
+						<input type="text" name="name" placeholder="Имя" required>
+						<input type="text" name="surname" placeholder="Фамилия" required>
+						<input type="text" name="phone" placeholder="Телефон" required>
+						<input type="text" name="e-mail" placeholder="E-mail" required>
+						<h4>если вы занимались танцами, укажите какими и сколько</h4>
+						<div id="d_back"><button id="back" type="button">к направлениям</button></div>
+						<div id="d_done"><button id="done" type="submit">готово</button></div>
+					</form>
+					
+				</div>
+			</div>
+			<div class="confirm" id="confirm">
+				<img src="img/confirm.png" alt="">
+				<span>Бинго!</span>
+			</div>		
+		</div>
+	</section>
+	<section class="footer">
+		<div class="container">
+			<div class="logos">
+				<img src="img/wdsf_logo.png" alt="" class="wdsf">
+			</div>
+			<hr>
+			<div class="icons">
+				<a href="#"><img src="img/facebook_main_icon.png" alt=""></a>
+				<a href="#"><img src="img/twitter_main_icon.png" alt=""></a>
+				<a href="#"><img src="img/inst_main_icon.png" alt=""></a>
+			</div>
+			<hr>
+			<div class="down_menu">
+				<a href="#" class="title"><span>кристалл</span></a>
+				<div class="links">
+					<a href="#"><span>о клубе</span></a>
+					<a href="contacts.html"><span>контакты</span></a>
+					<a href="#"><span>связаться с разработчиками</span></a>
+				</div>
+			</div>
+			<div class="all_rights">© 2016 Crystal. All rights reserved.</div>
+		</div>
+	</section>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="js/common.js"></script> 
+
+</body>
+</html>

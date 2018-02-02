@@ -1,0 +1,597 @@
+$light-grey: #9fa3a7
+$yell: #ffc80a
+$purp: #8f75be
+
+%start_dance-h-base
+	font-family: 'ArvoRegular'
+	font-size: 44px
+
+%grey-opensans-base
+	font-family: 'OpenSans'
+	color: $light-grey
+
+.button
+	font-family: 'LatoBold'
+	font-size: 14px
+	text-transform: uppercase
+	border: 3px solid $yell
+	border-radius: 28px
+	padding: 18px 50px
+	color: #000
+
+.navbar
+	background-color: rgba(0,0,0,.6);
+	z-index: 1000
+
+	.navbar-header
+			
+		button
+			padding: 6px 0 0 0
+
+			span
+				background-color: #fff
+				height: 4px
+				width: 30px
+
+		.navbar-brand
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+
+			span
+				font-family: 'LatoBold'
+				font-size: 28px
+				color: #fff
+				text-transform: uppercase
+				margin-left: 15px
+				padding-top: 2px
+
+	.navbar-collapse
+		float: right
+		margin-top: 15px
+
+		div:nth-child(5)
+			margin-left: 130px
+
+
+		div
+			display: inline-block
+			font-family: 'LatoBold'
+			font-size: 16px
+			margin-right: 40px
+			text-align: center
+			
+			a
+				color: #fff
+				margin: 0 auto
+
+			.active
+				text-decoration: none
+				color: $yell
+
+			a:hover, a:focus
+				text-decoration: none
+				color: $yell
+
+			.button
+				padding: 10px
+				
+.main_screen
+	background-color: #2c2c2c
+	padding: 200px 0
+
+			
+	.big_logo
+		max-width: 450px
+		margin: 0 auto 
+
+	.slog
+		font-family: "OpenSansBold"
+		font-size: 89px
+		margin: 0 auto
+		max-width: 760px
+		max-height: 90px
+		text-align: center
+		color: #fff
+
+	.slog_2
+		font-size: 65px
+		max-height: 70px
+
+	.quote
+		margin: 40px auto 0
+		max-width: 700px
+
+		.inside_quote
+			width: 570px
+			position: absolute
+			margin:
+				left: 100px
+				top: -63px
+
+			div
+				display: inline-block
+				font-family: 'ArvoRegular'
+				font-size: 22px
+				width: 525px
+
+			img
+				margin:
+					bottom: 36px
+					right: 12px
+
+		.writer
+			width: 400px
+			margin:
+				left: 100px
+				top: 5px
+
+			span
+				font-family: 'LatoRegular'
+				color: #fff
+	
+			.name
+				font-size: 20px
+
+			.who
+				font-size: 18px
+
+.sa
+	background-image: url(../img/dances/0.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+.ch
+	background-image: url(../img/dances/1.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+.ru
+	background-image: url(../img/dances/2.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+.pd
+	background-image: url(../img/dances/3.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+.jv
+	background-image: url(../img/dances/4.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+.sw
+	background-image: url(../img/dances/5.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+.tg
+	background-image: url(../img/dances/6.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+.vw
+	background-image: url(../img/dances/7.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+.sf
+	background-image: url(../img/dances/8.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+.qs
+	background-image: url(../img/dances/9.jpg)
+	background-position: center center
+	background-repeat: no-repeat
+
+#dances
+	height: 1000px
+	background-color: #000
+	padding:
+		top: 30px
+
+	.main_buttonset
+		width: 585px
+		margin: 0 auto
+
+		.button	
+			font-size: 12px
+			letter-spacing: 1px
+
+		.button:hover, .button:focus
+			text-decoration: none
+
+		#la
+			padding: 7px 10px 4px
+			border-radius: 20px 0 0 20px
+			margin-right: -3px
+			color: #fff
+			background-color: rgba(0, 0, 0, 0) 
+
+		#st
+			padding: 7px 45px 4px 45.5px
+			border-radius: 0 20px 20px 0 
+			margin-left: -3px
+			color: #fff
+			background-color: rgba(0, 0, 0, 0)
+
+		.active
+			color: #000 !important
+			background-color: $yell !important 
+
+	.buttonset
+		
+		.button	
+			font-size: 12px
+			letter-spacing: 1px
+			padding: 7px 10px 4px
+			background-color: rgba(0, 0, 0, 0)
+			color: #fff
+
+		.active
+			border: 3px solid $yell !important
+			margin: 0 !important
+
+		.button
+			margin: 3px
+			border: none
+
+		.button:hover
+			border: 3px solid $yell
+			margin: 0
+
+	#la_buttonset
+		width: 447px
+		margin: 
+			top: 15px 
+			left: -223.5px
+		left: 50%
+		position: absolute
+		display: none
+	
+	#st_buttonset
+		width: 690px
+		margin: 
+			top: 15px 
+			left: -345px
+		left: 50%
+		position: absolute
+		display: none
+
+	.visual
+		display: block !important
+		
+.start_dance
+	text-align: center
+		
+	h1 
+		@extend %start_dance-h-base
+		margin:
+			top: 80px
+			bottom: 35px
+
+	.description
+		@extend %grey-opensans-base
+		font-size: 17px
+		margin:
+			top: 0
+			bottom: 75px
+
+	.active
+		display: block !important
+
+	.active_entry
+		display: flex !important	
+
+	.entry
+		display: none
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		max-width: 490px * 2
+		margin: 0 auto 45px
+
+		.start_entry
+			height: 590px
+			width: 490px
+			padding: 95px 0
+			display: flex
+			flex-direction: column
+			align-items: center
+
+		#adults
+			border: 1px solid $light-grey
+			border-radius: 5px 0 0 5px
+
+			.button
+				background-color: #fff
+
+		#child
+			border-radius: 0 5px 5px 0
+			background-color: $purp
+
+			h3
+				color: $yell
+
+			.button
+				color: #fff
+				background-color: $purp
+
+		h3
+			font-family: 'MyriadProRegular'
+			font-size: 14px
+			letter-spacing: 2px
+			text-transform: uppercase
+			color: $light-grey
+			margin:
+				top: 0
+				bottom: 42px
+
+		h2
+			@extend %start_dance-h-base
+			margin:
+				top: 0
+				bottom: 62px
+
+		.training_programm
+			@extend %grey-opensans-base
+			font-size: 14px
+			max-width: 267px
+			margin: 0 auto 80px
+
+	.contacts
+		display: none
+		padding: 40px 0
+		h3, h4
+			font-family: 'LatoBold'
+			font-size: 14px
+			letter-spacing: 2px
+			text-transform: uppercase
+			color: $light-grey
+
+		.call_me
+			max-width: 800px
+			margin: 0 auto
+
+			input
+				width: 320px
+				height: 43px
+				background-color: #fafafa
+				border: 1px solid $light-grey
+				border-radius: 5px
+				margin: 15px 15px
+				padding-left: 10px
+
+		h4
+			color: #626467
+			font-size: 12px
+
+		#back
+			width: 232px
+			height: 44px
+			border: 2px solid $light-grey
+			border-radius: 20px
+			background-color: #FFF
+			float: left
+			margin:
+				left: 178px
+				top: 200px
+			font-family: 'LatoBold'
+			font-size: 14px
+			letter-spacing: 2px
+			text-transform: uppercase
+		#done
+			width: 160px
+			height: 44px
+			background-color: $purp
+			border-radius: 20px
+			border: none
+			float: right
+			margin:
+				right: 190px
+				top: 200px
+			font-family: 'LatoBold'
+			font-size: 14px
+			letter-spacing: 2px
+			text-transform: uppercase
+
+	.confirm
+		padding: 50px 0
+		margin-bottom: 50px
+		display: none		
+
+		span
+			display: block
+			font-size: 60px
+
+	.line
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		max-width: 500px
+		height: 30px
+		margin: 80px auto 0
+
+		img
+			height: 30px
+
+		.yellow_line
+			color: $yell
+			background-color: $yell
+			border: none
+			height: 2px
+			width: 205px
+
+		.ints
+			border: 1px solid $yell
+			border-radius: 28px
+			background-color: $yell
+			font-size: 20px
+			padding: 0 9px
+			color: #fff
+			display: none
+			
+		.ticks
+			border: 1px solid $purp
+			border-radius: 28px
+			background-color: $purp
+			font-size: 20px
+			padding: 0 7px
+			color: #fff	
+			display: none
+
+		.visual
+			display: block !important
+
+		.active_int
+			border: 1px solid $purp
+			background-color: $purp
+
+		.active_line
+			color: #8f75be !important
+			background-color: #8f75be !important
+
+	.steps
+		width: 600px
+		margin: 5px auto 50px
+
+		span
+			font-family: 'LatoBold'
+			font-size: 10px
+			text-transform: uppercase
+			letter-spacing: 2px
+
+		span:nth-child(1)
+			margin-left: 18px
+			float: left
+
+		span:nth-child(2)
+			margin-left: 125px
+			float: left
+
+		span:nth-child(3)
+			margin-right: 35px
+			float: right
+
+.footer
+	background-color: #2c2c2c
+	
+	.logos
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+		align-items: center
+		margin: 35px 0
+
+	hr
+		color: #424242
+		background-color: #424242	
+		border: none
+		height: 2px
+
+	.icons
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		width: 200px
+		margin: 0 auto
+
+	.down_menu
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+		align-items: top
+
+		.title
+			font-family: 'LatoBold'
+			font-size: 30px
+			text-transform: uppercase
+			color: #fff
+			width: 165px
+
+		.title:hover, .title:focus
+			text-decoration: none
+
+		.links
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: top
+			width: 555px
+			padding: 
+				top: 5px
+				left: 10px
+
+			a
+				font-family: 'LatoBold'
+				font-size: 12px
+				text-transform: uppercase
+				color: #fff
+				margin:
+					bottom: 4px
+
+			a:nth-child(1)
+				width: 55px
+
+			a:nth-child(2)
+				width: 70px	
+
+			a:hover
+				text-decoration: none
+				color: $yell
+
+	.all_rights
+		font-family: 'OpenSansRegular'
+		font-size: 12px
+		color: #5e5e5e
+		width: 195px
+		margin: 0 auto	
+
+.contacts__content
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	margin:
+		top: 51px
+
+	.info
+		margin: 
+			left: 390px
+		padding:
+			left: 20px
+			bottom: 20px
+		h2
+			font-family: 'LatoBold';
+			font-size: 28px;
+			text-transform: uppercase;
+
+		h3
+			font-family: 'ArvoRegular'
+			color: #afb3b6
+			font-size: 14px
+			margin:
+				top: 50px
+		
+		.addr
+			font-family: 'OpenSansBold'
+			font-size: 24px
+
+		.tel
+			font-family: 'ArvoRegular'
+			font-size: 24px
+
+		p
+			font-family: 'ArvoRegular'
+			font-size: 19px
+			color: #afb3b6
+			max-width: 430px
+			margin: 70px 0
+
+		.icons
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			max-width: 250px 
+
+	#map
+		width: 870px
+		height: 850px		
+
